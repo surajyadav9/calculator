@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Asap');
+
+/* Global */
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:'Asap',sans-serif;
+}
+
+
+/* header */
+
+header h1{
+    text-align:center;
+    padding:15px;
+    font-size:2rem;
+}
+
+/* main */
+
+main{
+    background-color:#394849;
+    height:80vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+#container{
+    background-color:#aaa;
+    width:40%;
+    height:50vh;
+    margin:auto;
+}
+
+#container #inner-container{
+    width:90%;
+    height:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows:repeat(5,1fr);
+    grid-gap: 10px;
+}
+
+#container .display{
+    grid-column:1/-1;
+    background-color:#eee;
+    color:#222;
+    font-size:1.2rem;
+    margin-top:14px;
+    border:none;
+    border-radius: 5px;
+    text-align: end;
+    
+}
+
+#container .button{
+    background-color:#eee;
+    box-shadow:5px 5px 5px grey;
+    border-radius:5px;
+    border:none;
+}
+
+#container .clear{
+    background-color:red;
+    color:#fff;
+}
+
+#container .operator{
+    background-color:#444;
+    color:#fff;
+}
+
+
+#container .button:hover{
+    background-color:#048373;
+    color:#fff;
+    
+}
+
+/* footer */
+
+footer{
+    text-align:center;
+    font-size:1.2rem;
+    padding:20px;
+}
+
+
+
